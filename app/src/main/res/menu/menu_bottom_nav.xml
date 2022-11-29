@@ -10,7 +10,7 @@
         android:id="@+id/navigation_search"
         android:title="@string/str_search"
         app:showAsAction="ifRoom|withText"
-        android:icon="@drawable/ic_search"
+        android:icon="@drawable/ic_explore"
         />
     <item
         android:id="@+id/navigation_profile"

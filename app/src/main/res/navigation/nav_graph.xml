@@ -6,17 +6,17 @@
     app:startDestination="@id/navigation_home">
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.instances.postapi.activities.fragments.HomeFragment"
+        android:name="com.instances.resturent_finder.fragments.HomeFragment"
         android:label="@string/str_home"
         tools:layout="@layout/fragment_home"/>
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.instances.postapi.activities.fragments.SearchFragment"
+        android:name="com.instances.resturent_finder.fragments.SearchFragment"
         android:label="@string/str_search"
         tools:layout="@layout/fragment_search"/>
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.instances.postapi.activities.fragments.ProfileFragment"
+        android:name="com.instances.resturent_finder.fragments.ProfileFragment"
         android:label="@string/str_profile"
         tools:layout="@layout/fragment_profile"/>
 
