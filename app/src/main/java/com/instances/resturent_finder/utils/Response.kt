@@ -14,5 +14,7 @@ data class Data (
     @SerializedName("url"         ) var url         : String? = null,
     @SerializedName("description" ) var description : String? = null,
     @SerializedName("lat"         ) var lat         : String? = null,
-    @SerializedName("long"        ) var long        : String? = null
+    @SerializedName("long"        ) var long        : String? = null,
+    @SerializedName("food"        ) var location    : String? = null,
+    @SerializedName("hour"        ) var hour        : String? = null
 ): Serializable
