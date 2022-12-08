@@ -67,14 +67,13 @@
             app:boxCornerRadiusTopEnd="@dimen/_12sdp"
             app:boxCornerRadiusTopStart="@dimen/_12sdp"
             app:errorEnabled="true"
-            android:enabled="false"
             app:layout_constraintTop_toBottomOf="@+id/civ_profile_pic">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="@dimen/_8sdp"
-                android:text="Full name"
+                android:hint="Full name"
                 android:textColor="@color/black"
                 android:padding="@dimen/_12sdp"
                 android:textCursorDrawable="@null" />
@@ -91,13 +90,12 @@
             app:boxCornerRadiusTopEnd="@dimen/_12sdp"
             app:boxCornerRadiusTopStart="@dimen/_12sdp"
             app:errorEnabled="true"
-            android:enabled="false"
             app:layout_constraintTop_toBottomOf="@+id/text_input_layout_full_name">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_cnic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ID Number"
+                android:hint="ID Number"
                 android:drawablePadding="@dimen/_8sdp"
                 android:textColor="@color/black"
                 android:padding="@dimen/_12sdp"
@@ -116,15 +114,13 @@
             app:boxCornerRadiusTopEnd="@dimen/_12sdp"
             app:boxCornerRadiusTopStart="@dimen/_12sdp"
             app:errorEnabled="true"
-            android:enabled="false"
             app:layout_constraintTop_toBottomOf="@+id/text_input_layout_cnic">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="@dimen/_8sdp"
-                android:text="Email"
-                android:focusableInTouchMode="false"
+                android:hint="Email"
                 android:textColor="@color/black"
                 android:padding="@dimen/_12sdp"
                 android:inputType="textEmailAddress"
@@ -143,44 +139,19 @@
             app:boxCornerRadiusTopEnd="@dimen/_12sdp"
             app:boxCornerRadiusTopStart="@dimen/_12sdp"
             app:errorEnabled="true"
-            android:enabled="false"
             app:layout_constraintTop_toBottomOf="@+id/text_input_layout_email">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="@dimen/_8sdp"
-                android:text="Phone"
+                android:hint="Phone"
                 android:textColor="@color/black"
                 android:padding="@dimen/_12sdp"
                 android:inputType="phone"
                 android:textCursorDrawable="@null" />
         </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_layout_address"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_12sdp"
-            android:elevation="0dp"
-            android:visibility="gone"
-            app:boxStrokeColor="@color/app_color"
-            app:boxCornerRadiusBottomEnd="@dimen/_12sdp"
-            app:boxCornerRadiusBottomStart="@dimen/_12sdp"
-            app:boxCornerRadiusTopEnd="@dimen/_12sdp"
-            app:boxCornerRadiusTopStart="@dimen/_12sdp"
-            app:errorEnabled="true"
-            app:layout_constraintTop_toBottomOf="@+id/text_input_layout_phone">
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawablePadding="@dimen/_8sdp"
-                android:textColor="@color/black"
-                android:hint="Address"
-                android:padding="@dimen/_12sdp"
-                android:textCursorDrawable="@null" />
-        </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_save_profile"
             android:layout_width="match_parent"
@@ -197,6 +168,6 @@
             android:layout_marginHorizontal="@dimen/_12sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_input_layout_address"/>
+            app:layout_constraintTop_toBottomOf="@+id/text_input_layout_phone"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
